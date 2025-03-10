@@ -1,0 +1,1 @@
+# aosp_device_covesa_emulator
