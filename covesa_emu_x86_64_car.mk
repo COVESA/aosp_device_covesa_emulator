@@ -8,10 +8,10 @@
 
 # TODO extract to device/covesa/common
 PRODUCT_COPY_FILES += \
-    $(LOCAL_DIR)/bootanimation-covesa.zip:system/media/bootanimation.zip
+    $(LOCAL_PATH)/bootanimation-covesa.zip:system/media/bootanimation.zip
 
-$(call inherit-product, device/generic/car/sdk_car_x86_64.mk)
+$(call inherit-product, device/generic/goldfish/car/sdk_car_x86_64.mk)
 
 PRODUCT_NAME := covesa_emu_x86_64_car
-PRODUCT_DEVICE := covesa_emu_x86_64_car
+PRODUCT_DEVICE := emulator_arm64
 PRODUCT_MODEL := COVESA car emulator for x86_64

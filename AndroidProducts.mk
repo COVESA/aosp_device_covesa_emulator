@@ -7,7 +7,7 @@
 # https://mozilla.org/MPL/2.0/.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/covesa_emu_x86_64_car.mk
+    $(LOCAL_DIR)/covesa_emu_x86_64_car.mk \
     $(LOCAL_DIR)/covesa_emu_arm64_car.mk
 
 COMMON_LUNCH_CHOICES := \
