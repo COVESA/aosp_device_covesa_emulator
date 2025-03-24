@@ -27,5 +27,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/generic/goldfish/car/sdk_car_x86_64.mk)
 
 PRODUCT_NAME := covesa_emu_x86_64_car
-PRODUCT_DEVICE := emulator_arm64
+PRODUCT_DEVICE := emulator_x86_64
 PRODUCT_MODEL := COVESA car emulator for x86_64
