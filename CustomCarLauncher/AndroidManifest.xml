@@ -68,7 +68,8 @@
             android:stateNotNeeded="true"
             android:resumeWhilePausing="true"
             android:exported="true"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"
+            android:directBootAware="true">
             <meta-data android:name="distractionOptimized" android:value="true"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -80,8 +81,7 @@
             android:name=".AppGridActivity"
             android:launchMode="singleInstance"
             android:exported="true"
-            android:theme="@style/Theme.Launcher.AppGridActivity"
-            android:directBootAware="true">
+            android:theme="@style/Theme.Launcher.AppGridActivity">
             <meta-data android:name="distractionOptimized" android:value="true"/>
             <intent-filter>
                 <action android:name="com.android.car.carlauncher.ACTION_APP_GRID"/>
