@@ -80,7 +80,8 @@
             android:name=".AppGridActivity"
             android:launchMode="singleInstance"
             android:exported="true"
-            android:theme="@style/Theme.Launcher.AppGridActivity">
+            android:theme="@style/Theme.Launcher.AppGridActivity"
+            android:directBootAware="true">
             <meta-data android:name="distractionOptimized" android:value="true"/>
             <intent-filter>
                 <action android:name="com.android.car.carlauncher.ACTION_APP_GRID"/>
