@@ -5,4 +5,4 @@ BUILD_EMULATOR_CLUSTER_DISPLAY := true
 
 
 PRODUCT_PACKAGES += \
-	CustomCarProvision # Overrides CarProvision and ensures that the setup wizard is skipped
+	CustomCarProvision
