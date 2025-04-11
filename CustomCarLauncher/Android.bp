@@ -17,31 +17,8 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-android_library {
-  name: "CarLauncher-core",
-  platform_apis: true,
-
-  srcs: ["src/**/*.java"],
-
-  resource_dirs: ["res"],
-
-  static_libs: [
-      "androidx-constraintlayout_constraintlayout-solver",
-      "androidx-constraintlayout_constraintlayout",
-      "androidx.lifecycle_lifecycle-extensions",
-      "car-media-common",
-      "car-telephony-common",
-      "car-ui-lib",
-      "WindowManager-Shell",
-      ],
-
-    libs: ["android.car"],
-
-    manifest: "AndroidManifest.xml",
-}
-
 android_app {
-    name: "CarLauncher",
+    name: "CustomCarLauncher",
 
     resource_dirs: [],
 
@@ -76,4 +53,6 @@ android_app {
             enabled: false,
         },
     },
+
+    manifest: "AndroidManifest.xml",
 }
