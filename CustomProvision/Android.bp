@@ -17,7 +17,7 @@ package {
 }
 
 android_app {
-    name: "CarProvision",
+    name: "CustomCarProvision",
     srcs: ["**/*.java"],
     libs: [
         "android.car-stubs",
@@ -32,6 +32,7 @@ android_app {
     privileged: true,
     required: ["allowed_privapp_com.android.car.provision"],
     overrides: [
+        "CarProvision",
         "Provision", // There can be only one!
     ],
 }
