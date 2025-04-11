@@ -74,6 +74,8 @@ import java.util.List;
  */
 public final class DefaultActivity extends Activity {
 
+    private static final boolean SKIP_SETUP = true;
+
     static final String TAG = "CarProvision";
 
     // TODO(b/170333009): copied from ManagedProvisioning app, as they're hidden;
@@ -141,6 +143,12 @@ public final class DefaultActivity extends Activity {
 
         int userId = getUserId();
         Log.i(TAG, "onCreate() for user " + userId + " Intent: " + getIntent());
+
+        if (SKIP_SETUP) {
+            Log.i(TAG, "onCreate(): skipping setup on COVESA emulator");
+            finishSetup();
+            return;
+        }
 
         if (userId == UserHandle.USER_SYSTEM && UserManager.isHeadlessSystemUserMode()) {
             // System user will be provisioned together with the first non-system user
