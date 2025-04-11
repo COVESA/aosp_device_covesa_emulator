@@ -20,12 +20,7 @@
 # For further information see https://covesa.global
 #
 
-# TODO extract to device/covesa/common
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bootanimation-covesa.zip:system/media/bootanimation.zip
-
-BUILD_EMULATOR_CLUSTER_DISPLAY := true
-
+$(call inherit-product, device/covesa/emulator/common.mk)
 $(call inherit-product, device/generic/goldfish/car/sdk_car_arm64.mk)
 
 PRODUCT_NAME := covesa_emu_arm64_car
