@@ -49,13 +49,12 @@ Do not leave any `TODO`s in there, otherwise Android Studio would fail to parse 
 
 ## TODO
 
-* [In Progress] GitHub actions with Build host (emulator.covesa.global) to build and release
-* [In Progress] Emulator is stuck with "Phone starting..." screen
-  * This can be worked around by clicking "Driver" button in right-top corner and cold-booting again
-  * The culprit is in the wizard which is failing to start, we are working on disabling it
+* [In Progress] GitHub actions with Build host (emulator.covesa.global) to build and deploy
 * This keeps spamming the logcat: `init  E  Control message: Could not find 'android.hardware.media.omx@1.0::IOmxStore/default' for ctl.interface_start from pid: 180 (/system/bin/hwservicemanager)`
-* Consider multidisplay support
-  Google AAOS (at least API 34) emulator starts with main display and an instrument cluster.
+    - Only on arm64
+
+## To Consider
+
 * Consider providing prebuilt AVD configurations for easy import in Android Studio.
   This means we need some information about different display configurations from different OEMs. Developers could then have OEM-specific screen sizes which all run the same emulator image.
   See `device/generic/car/tools/README.md`, `device/generic/car/tools/x86_64/devices.xml`, and https://source.android.com/docs/automotive/start/avd/android_virtual_device#create-the-avd-image-xml-file
