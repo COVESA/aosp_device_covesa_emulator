@@ -8,7 +8,7 @@ COVESA emulator is a common platform for third-party application developers targ
 
 1. "Tools" -> "SDK Manager" -> "SDK Update Sites" -> "+"
    * Name: COVESA
-   * URL: https://developer.covesa.global/covesa-sys-img2-1.xml
+   * URL: https://emulator.covesa.global/sdk/emulators/covesa-sys-img2-1.xml
 2. "OK" -> "Apply"
 3. "Tools" -> "Device Manager" -> "+" -> "Create Virtual Device" -> Choose any Automotive variant without Google Play or create your own "New Hardware Profile" -> "Next"
 4. COVESA Emulator image should appear in the list of "Recommended" images. Make sure you are choosing correct ABI. Currently COVESA only provides Android 12 (API 31) emulator images for `arm64-v8a` and `x86_64`. -> "Next"
@@ -49,7 +49,7 @@ Do not leave any `TODO`s in there, otherwise Android Studio would fail to parse 
 
 ## TODO
 
-* [In Progress] GitHub actions with Build host (developer.covesa.global) to build and release
+* [In Progress] GitHub actions with Build host (emulator.covesa.global) to build and release
 * [In Progress] Emulator is stuck with "Phone starting..." screen
   * This can be worked around by clicking "Driver" button in right-top corner and cold-booting again
   * The culprit is in the wizard which is failing to start, we are working on disabling it
