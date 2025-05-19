@@ -11,3 +11,6 @@ PRODUCT_PACKAGES += CustomCarProvision
 # We add the directBootAware attribute to the activity in the AndroidManifest.xml,
 # otherwise sometimes it wouldn't load and the system would be stuck on FallbackHome
 PRODUCT_PACKAGES += CustomCarLauncher
+
+# UnifiedPush distributor
+PRODUCT_PACKAGES += sunup
